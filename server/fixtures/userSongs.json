@@ -1,0 +1,14 @@
+{
+  "userSongs": [
+    {
+      "id": 1,
+      "name": "Like a Rolling Stone",
+      "artist": "Bob Dylan"
+    },
+    {
+      "id": 2,
+      "name": "Smells Like Teen Spirit",
+      "artist": "Nirvana"
+    }
+  ]
+}
