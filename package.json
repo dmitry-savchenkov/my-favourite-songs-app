@@ -2,6 +2,11 @@
   "name": "my-favourite-songs-app",
   "version": "1.0.0",
   "scripts": {
+    "install:deps:api": "cd ./server && yarn install",
+    "install:deps:header": "cd ./applications/header && yarn install",
+    "install:deps:songs": "cd ./applications/songs-list && yarn install",
+    "install:deps:main": "cd ./applications/my-favourite-songs-app && yarn install",
+    "install:deps": "run-p install:deps:api install:deps:header install:deps:songs install:deps:main",
     "start:api": "cd ./server && yarn serve",
     "start:header": "cd ./applications/header && yarn start",
     "start:songs": "cd ./applications/songs-list && yarn start",

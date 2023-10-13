@@ -2,38 +2,32 @@
 
 ## Project structure
 - applications: contains web applications
-- server: Rest API server that powers the app
+    - my-favourite-songs-app: main application portal
+    - header: micro frontend application
+    - songs-list: micro frontend application
+- server: Rest API server
 ---
 ## How to run
 
-### Run server
+### Install dependencies
 ```bash
-    cd server
     yarn install
-    yarn serve
+    yarn install:deps
 ```
 
-### Run micro frontends in dev mode
-
-#### Header
+### Run app in dev mode
 ```bash
-    cd applications/header
-    yarn install
-    yarn serve
-```
-#### Songs list
-```bash
-    cd applications/header
-    yarn install
-    yarn serve
-```
-#### Application
-```bash
-    cd applications/my-favourite-songs-app
-    yarn install
-    yarn serve
+    yarn start:app
 ```
 ---
 ## Tasks
-- access the app architecture
-- Suggest improvements for the existing micro frontend architecture
+> **_NOTE:_**  Interview time is limited, and we don't expect you to finish all tasks. Please try to complete as many as you can.
+- Assess current application architecture
+  - What are the pros and cons of the current architecture?
+  - What are the possible improvements?
+- Suggest more scalable solution for micro frontend applications
+- Suggest the way to share common dependencies between micro frontend applications
+- Suggest the way to establish communication between micro frontend applications
+- How would you implement deployment of the application?
+- How would you implement CI/CD for the application?
+- Suggest testing strategy for the application.
