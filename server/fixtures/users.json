@@ -1,0 +1,11 @@
+[
+  {
+    "id": "1",
+    "name": "Antonio Banderas",
+    "birthday": "1960-08-10",
+    "credentials": {
+      "email": "tony.banderas@gmail.com",
+      "password": "Zorro!sTheB3st"
+    }
+  }
+]
