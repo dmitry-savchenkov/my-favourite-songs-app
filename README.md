@@ -1,27 +1,38 @@
 # My favourite songs app
 
 ## Project structure
+
 - applications: contains web applications
-    - my-favourite-songs-app: main application portal
-    - header: micro frontend application
-    - songs-list: micro frontend application
+  - my-favourite-songs-app: main application portal
+  - header: micro frontend application
+  - songs-list: micro frontend application
 - server: Rest API server
+
 ---
+
 ## How to run
 
 ### Install dependencies
+
 ```bash
     yarn install
     yarn install:deps
 ```
 
 ### Run app in dev mode
+
 ```bash
     yarn start:app
 ```
+
 ---
+
 ## Tasks
-> **_NOTE:_**  Interview time is limited, and we don't expect you to finish all tasks. Please try to complete as many as you can.
+
+> **_NOTE:_** Interview time is limited, and we don't expect you to finish all tasks. Please try to complete as many as you can.
+
+### General
+
 - Assess current application architecture
   - What are the pros and cons of the current architecture?
   - What are the possible improvements?
@@ -31,3 +42,16 @@
 - How would you implement deployment of the application?
 - How would you implement CI/CD for the application?
 - Suggest testing strategy for the application.
+
+### User Stories
+
+- Implement an authentication flow that returns a token which micro frontends can use to request user details and user favorite songs.
+- Implement a component/page that fetches the favorite songs from a particular user and renders it as a table.
+- Implement a component that fetches the details of a user and displays the following attributes:
+  - User name
+  - User birthday (if available)
+- Implement a signup flow where non-authenticated users can register in the app with the following criterias:
+  - Users need to provide a name
+  - Users need can provide a birthday (optional)
+  - Users need to provide an email
+  - Users need to provide a password (needs to be at least 8 characters, and must contain at least one number and one special character)
