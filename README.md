@@ -41,6 +41,7 @@
 - Suggest the way to establish communication between micro frontend applications
 - How would you implement deployment of the application?
 - How would you implement CI/CD for the application?
+- How would you add monitoring for each individual application? (What metrics would you track?).
 - Suggest testing strategy for the application.
 
 ### User Stories
