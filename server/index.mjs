@@ -7,6 +7,7 @@ import bodyParser from "body-parser";
 import userController from "./controllers/userController.mjs";
 import songsController from "./controllers/songsController.mjs";
 import authController from "./controllers/authController.mjs";
+import signupController from "./controllers/signupController.mjs";
 
 const port = 4441;
 const app = express();
@@ -18,6 +19,7 @@ app.use(bodyParser.json());
 app.use("/auth", authController);
 app.use("/users", userController);
 app.use("/songs", songsController);
+app.use("/signup", signupController);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
