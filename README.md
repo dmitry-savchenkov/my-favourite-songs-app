@@ -1,6 +1,6 @@
 # My favourite songs app
 
-## Project structure
+## Proposed Project structure
 
 - applications: contains web applications
   - my-favourite-songs-app: main application portal
@@ -24,6 +24,14 @@
 ```bash
     yarn start:app
 ```
+
+---
+
+## Context
+
+The current project structure is far from the ideal micro-frontend setup we would consider acceptable.
+As part of this challenge, we expect you to point out what are the current problems in the current architecture, and what can be done to achieve a consistent, reliable, and scalable micro-frontend setup.
+Keep in mind that one of the goals of the proposed architecture should be to enable multiple teams to have independent release cycles, and provide common resources which them can leverage to achieve consistency and quality.
 
 ---
 
