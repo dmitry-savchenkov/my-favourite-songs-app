@@ -33,6 +33,8 @@ The current project structure is far from the ideal micro-frontend setup we woul
 As part of this challenge, we expect you to point out what are the current problems in the current architecture, and what can be done to achieve a consistent, reliable, and scalable micro-frontend setup.
 Keep in mind that one of the goals of the proposed architecture should be to enable multiple teams to have independent release cycles, and provide common resources which them can leverage to achieve consistency and quality.
 
+For the sake of simplicity, all applications are stored in a single repository, but should be considered as a separate projects.
+
 ---
 
 ## Tasks
