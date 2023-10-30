@@ -2,18 +2,23 @@
   "name": "my-favourite-songs-app",
   "version": "1.0.0",
   "scripts": {
-    "install:deps:api": "cd ./server && yarn install",
-    "install:deps:header": "cd ./applications/header && yarn install",
-    "install:deps:songs": "cd ./applications/songs-list && yarn install",
-    "install:deps:main": "cd ./applications/my-favourite-songs-app && yarn install",
+    "install:deps:api": "yarn --cwd ./server install",
+    "install:deps:header": "yarn --cwd ./applications/header install",
+    "install:deps:songs": "yarn --cwd ./applications/songs-list install",
+    "install:deps:main": "yarn --cwd ./applications/my-favourite-songs-app install",
     "install:deps": "run-p install:deps:api install:deps:header install:deps:songs install:deps:main",
-    "start:api": "cd ./server && yarn serve",
-    "start:header": "cd ./applications/header && yarn start",
-    "start:songs": "cd ./applications/songs-list && yarn start",
+    "start:api": "yarn --cwd ./server serve",
+    "start:header": "yarn --cwd ./applications/header start",
+    "start:songs": "yarn --cwd ./applications/songs-list start",
     "start:mfes": "run-p start:header start:songs",
     "start:dependencies": "run-p start:api start:mfes",
-    "start:main": "cd ./applications/my-favourite-songs-app && yarn start",
-    "start:app": "run-p start:dependencies start:main"
+    "start:main": "yarn --cwd ./applications/my-favourite-songs-app start",
+    "start:app": "run-p start:dependencies start:main",
+    "clean:api": "rimraf ./server/node_modules",
+    "clean:header": "rimraf ./applications/header/node_modules",
+    "clean:songs": "rimraf ./applications/songs-list/node_modules",
+    "clean:main": "rimraf ./applications/my-favourite-songs-app/node_modules",
+    "clean": "run-p clean:api clean:header clean:songs clean:main"
   },
   "repository": {
     "type": "git",
@@ -29,6 +34,7 @@
     "concurrently": "^8.2.1"
   },
   "devDependencies": {
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.5"
   }
 }
